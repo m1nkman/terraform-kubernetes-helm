@@ -111,6 +111,7 @@ resource "kubernetes_role" "rbac_tiller_resource_access" {
       "batch",
       "extensions",
       "apps",
+      "autoscaling",
       "rbac.authorization.k8s.io", # We include RBAC here because many helm charts create RBAC roles to minimize pod access.
     ]
 
